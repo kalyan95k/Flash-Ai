@@ -1,0 +1,26 @@
+*{box-sizing:border-box}body{margin:0;font-family:Poppins,Arial;background:#0b1020;color:#fff;transition:.3s}
+body.light{background:#f5f5f5;color:#111}
+#loader{position:fixed;inset:0;background:#000;display:flex;align-items:center;justify-content:center;font-size:2rem;z-index:9999}
+.progress{height:4px;background:#4361EE;position:fixed;top:0;left:0;width:0;z-index:999}
+.navbar{display:flex;justify-content:space-between;align-items:center;padding:15px 5%;backdrop-filter:blur(12px);position:sticky;top:0}
+.nav-links{display:flex;gap:20px;list-style:none}
+.btn{background:linear-gradient(45deg,#4361EE,#7209B7);padding:12px 20px;border-radius:30px}
+.hero{display:flex;flex-wrap:wrap;justify-content:space-around;align-items:center;padding:80px 20px}
+.hero-text{max-width:500px}
+.orbit{width:320px;height:320px;border:2px solid #4361EE;border-radius:50%;position:relative;animation:spin 12s linear infinite}
+.center{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:28px;font-weight:bold}
+.icon{position:absolute;font-size:2rem}
+.i1{top:-10px;left:50%}.i2{top:50%;right:-10px}.i3{bottom:-10px;left:50%}.i4{top:50%;left:-10px}
+@keyframes spin{to{transform:rotate(360deg)}}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));padding:20px;text-align:center}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px;padding:20px}
+.card,.review{background:rgba(255,255,255,.08);backdrop-filter:blur(10px);padding:20px;border-radius:20px;transition:.3s}
+.card:hover,.review:hover{transform:translateY(-8px)}
+.popular{border:2px solid gold}
+.title{text-align:center}
+.carousel{display:flex;gap:15px;overflow:auto;padding:20px}
+.faq-item{margin:10px 20px;background:#1b2240;padding:10px;border-radius:10px}
+.faq-item div{display:none;padding-top:10px}
+footer{text-align:center;padding:30px;background:#111}
+#topBtn{position:fixed;right:20px;bottom:20px;padding:10px;border-radius:50%}
+@media(max-width:768px){.nav-links{display:none}}
